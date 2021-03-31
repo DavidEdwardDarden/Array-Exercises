@@ -6,20 +6,6 @@ console.log("DAVID")
 // Export a function named getStudentsInCohort
 // It should accept one integer parameter named `cohort`
 // It should return an array of just the students who are in that cohort
-//--------------------------------------------
-//  export let getStudentsInCohort = (cohort) => {
-//  let specCohort = useStudents.cohort.filter(b => cohort === cohort)
-//  if (b = true){
-//  return specCohort}
-//  }
-//--------------------------------------------
-// export let getStudentsInCohort = useStudents.filter(function (e){
-// })
-//----------------------------------------------
-//debugger
-//let specCohortArray = [];
-//for(let index=0; index < students.length; index++)
-//---------------------------------------------
 export const getStudentsInCohort = (cohort) => {
     const filteredStudents = students.filter(studentObj => studentObj.cohort === cohort)
     return filteredStudents
@@ -70,8 +56,10 @@ console.log(getAvailableInstructors())
 // It should accept one string parameter named `language`
 // It should return an array of students who know the given language
 // HINT: In addition to the `filter` method, you might also look up the `some` method
-export const getStudentsByLanguage = () => {
-    
+export const getStudentsByLanguage = (language) => {
+  //WORK IN PROGRESS!!!!!!!!!!!!!!!!!!!  
+    language = 7
+    return 7
 }
 /******** ADVANCED CHALLENGE ********/
 /******** Only do this if all other tests are passing ****/
