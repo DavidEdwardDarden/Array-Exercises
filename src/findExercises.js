@@ -46,12 +46,10 @@ console.log(getStudentByName("Summer Smith"))
 // It should accept one integeter parameter named `studentId`
 // It should return the instructor object of the student whose id matches `studentId`
 // Ex: getInstructorOfStudent(4)      // returns Brenda Long
-
-//working HERE!!!!!!!!!!!!!!!!!!
 export const getInstructorOfStudent = (studentId) => {
  //  console.log(students)
     let stud = students.find(studentObj => studentObj.id === studentId)
-    console.log(stud)
+   // console.log(stud)
     let studentInstructor= stud.instructorId
     return instructors.find(instructorObj => instructorObj.id === studentInstructor )
 }
