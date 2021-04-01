@@ -56,26 +56,63 @@ export const getInstructorOfStudent = (studentId) => {
 console.log("getInstructorsOfStudents test:")
 console.log(getInstructorOfStudent(4))
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Export a function called getStudentWithMostLangs
 // It should not accept any parameters
 // It should return the student object who knows the most programming languages
 // Ex: getStudentWithMostLangs()      // returns Rick Sanchez
 // HINT: You may not need the `find` method for this. This is one of the few cases where a `for` loop might be appropriate
 export const getStudentWithMostLangs = () => {
-    //created an array of numbers of languages that each student possess
     let langArray = students.map(studentObj => studentObj.languages.length)
-console.log(langArray)
-//found the Max number of languages in array vvvvvvvvvvv
     let maximumNum = Math.max(...langArray)
-    //returned the student who's number of languages matches the 
-    //maximum number of languages from the array and returned it as
-    // a student object
   return students.find(studentObj => (studentObj.languages.length === maximumNum))
 }
 
-// console.log(langNum)
-console.log("ROBERTO")
-console.log(getStudentWithMostLangs())
-console.log("ROBERTO2")
 
-console.log("ROBERTO3")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log("getStudentWithMostLangs test:")
+console.log(getStudentWithMostLangs())
+
+
+
+
+// export const getStudentWithMostLangs = () => {
+//     //created an array of numbers of languages that each student possess
+//     let langArray = students.map(studentObj => studentObj.languages.length)
+// console.log(langArray)
+// //found the Max number of languages in array vvvvvvvvvvv
+//     let maximumNum = Math.max(...langArray)
+//     //returned the student who's number of languages matches the 
+//     //maximum number of languages from the array and returned it as
+//     // a student object
+//   return students.find(studentObj => (studentObj.languages.length === maximumNum))
